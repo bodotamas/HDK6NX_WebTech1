@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelSnap - Utazási kvíz</title>
+  <link rel="stylesheet" href="quiz.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <h1 class="brand">TravelSnap</h1>
+      <nav class="nav">
+        <a href="kezdolap.html">Kezdőlap</a>
+        <a href="varosok.html">Városok</a>
+        <a href="galeria.html">Galéria</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+        <a href="inspiracio.html">Inspiráció</a>
+        <a href="quiz.html" class="active">Kvíz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero-title">Mennyire ismered Európát?</h2>
+        <p class="hero-sub">9 kérdés, 9 város – válaszolj, és nézd meg, megdöntöd-e a saját rekordod!</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card quiz">
+        <div class="topbar">
+          <div class="progress">
+            <div id="bar" class="bar" style="width:0%"></div>
+          </div>
+          <div class="score">
+            <span>Jelenlegi pont: <strong id="score">0</strong></span>
+            <span>Rekord: <strong id="best">0</strong></span>
+          </div>
+        </div>
+
+        <div id="panel" class="panel">
+        </div>
+
+        <div class="actions">
+          <button id="nextBtn" class="btn" disabled>Következő</button>
+          <button id="restartBtn" class="btn ghost">Újrakezd</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 TravelSnap</p>
+    </div>
+  </footer>
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

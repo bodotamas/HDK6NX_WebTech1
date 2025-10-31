@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelSnap - Inspiráció</title>
+  <link rel="stylesheet" href="inspo.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <h1 class="brand">TravelSnap</h1>
+      <nav class="nav">
+        <a href="kezdolap.html">Kezdőlap</a>
+        <a href="varosok.html">Városok</a>
+        <a href="galeria.html">Galéria</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+        <a href="inspiracio.html" class="active">Inspiráció</a>
+        <a href="quiz.html">Kvíz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <p class="badge">Napi inspiráció</p>
+        <h2 class="title">
+          Fedezd fel <span class="gradient-text" id="cityOut">a világot</span>!
+        </h2>
+        <blockquote id="quoteBox">„Az utazás megtanít arra, hogy mennyire kevésre van igazán szükségünk.” <span>— ismeretlen</span></blockquote>
+
+        <div class="actions">
+          <button id="newInspo" class="btn">Új inspiráció</button>
+          <a id="seeCities" href="varosok.html" class="btn ghost">Városok megnézése</a>
+          <label class="auto">
+            <input type="checkbox" id="autoPlay"/> Automatikus váltás
+          </label>
+        </div>
+      </div>
+      <div class="backdrop" id="backdrop" aria-hidden="true"></div>
+    </section>
+
+    <section class="container cards">
+      <article class="card">
+        <h3>Merre indulnál?</h3>
+        <ul class="chips" id="chipList">
+        </ul>
+      </article>
+
+      <article class="card tip">
+        <h3>Apró tipp</h3>
+        <p id="tipOut">Foglalj rugalmas dátumokkal, és nézd meg több környék árát is.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 TravelSnap</p>
+    </div>
+  </footer>
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="inspo.js"></script>
+</body>
+</html>

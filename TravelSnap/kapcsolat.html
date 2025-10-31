@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelSnap - Kapcsolat</title>
+  <link rel="stylesheet" href="form.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <h1 class="brand">TravelSnap</h1>
+      <nav class="nav">
+        <a href="kezdolap.html">Kezdőlap</a>
+        <a href="varosok.html">Városok</a>
+        <a href="galeria.html">Galéria</a>
+        <a href="kapcsolat.html" class="active">Kapcsolat</a>
+        <a href="inspiracio.html">Inspiráció</a>
+        <a href="quiz.html">Kvíz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero-title">Lépj <span class="gradient-text">kapcsolatba</span> velünk</h2>
+        <p class="hero-sub">Írj nekünk, válassz várost és indulhat a tervezés!</p>
+      </div>
+    </section>
+
+    <section class="container grid">
+      <div class="card">
+        <h3>Üzenet és utazás tervezése</h3>
+        <form id="contactForm" novalidate>
+          <div class="row">
+            <label for="name">Név*</label>
+            <input type="text" id="name" name="name" placeholder="Teljes neved" required />
+            <small class="error">Add meg a neved!</small>
+          </div>
+
+          <div class="row">
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" placeholder="valaki@example.com" required />
+            <small class="error">Érvényes e-mail címet adj meg!</small>
+          </div>
+
+          <div class="row group-2">
+            <div>
+              <label for="date">Tervezett indulás</label>
+              <input type="date" id="date" name="date" />
+              <small class="error">A dátum nem lehet múltbeli.</small>
+            </div>
+
+            <div>
+              <label for="city">Célváros</label>
+              <select id="city" name="city">
+                <option value="">Válassz várost…</option>
+                <option>Budapest</option>
+                <option>Prága</option>
+                <option>Bécs</option>
+                <option>Krakkó</option>
+                <option>Párizs</option>
+                <option>Róma</option>
+                <option>Amszterdam</option>
+                <option>Barcelona</option>
+                <option>Koppenhága</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label>Kedvenc városok (több választható)</label>
+            <div class="chips">
+              <label><input type="checkbox" name="fav" value="Budapest"> <span>Budapest</span></label>
+              <label><input type="checkbox" name="fav" value="Prága"> <span>Prága</span></label>
+              <label><input type="checkbox" name="fav" value="Bécs"> <span>Bécs</span></label>
+              <label><input type="checkbox" name="fav" value="Krakkó"> <span>Krakkó</span></label>
+              <label><input type="checkbox" name="fav" value="Párizs"> <span>Párizs</span></label>
+              <label><input type="checkbox" name="fav" value="Róma"> <span>Róma</span></label>
+              <label><input type="checkbox" name="fav" value="Amszterdam"> <span>Amszterdam</span></label>
+              <label><input type="checkbox" name="fav" value="Barcelona"> <span>Barcelona</span></label>
+              <label><input type="checkbox" name="fav" value="Koppenhága"> <span>Koppenhága</span></label>
+            </div>
+          </div>
+
+          <div class="row">
+            <label>Szállás preferencia</label>
+            <div class="radio-line">
+              <label><input type="radio" name="stay" value="Hotel"> Hotel</label>
+              <label><input type="radio" name="stay" value="Hostel"> Hostel</label>
+              <label><input type="radio" name="stay" value="Airbnb"> Airbnb</label>
+            </div>
+          </div>
+
+          <div class="row group-2">
+            <div>
+              <label for="theme">Színtéma</label>
+              <input type="color" id="theme" value="#0a4ea1" />
+            </div>
+            <div>
+              <label for="countryInput">Ország (adatlista)</label>
+              <input list="countries" id="countryInput" placeholder="Kezdj el gépelni…" />
+              <datalist id="countries">
+                <option value="Magyarország">
+                <option value="Csehország">
+                <option value="Ausztria">
+                <option value="Lengyelország">
+                <option value="Franciaország">
+                <option value="Olaszország">
+                <option value="Hollandia">
+                <option value="Spanyolország">
+                <option value="Dánia">
+              </datalist>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="message">Üzenet</label>
+            <textarea id="message" rows="4" placeholder="Ide írhatod a kérdéseidet vagy ötleteidet…"></textarea>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn">Küldés</button>
+            <button type="reset" class="btn ghost">Törlés</button>
+          </div>
+        </form>
+
+        <div id="thanks" class="thanks" aria-live="polite"></div>
+      </div>
+
+      <aside class="card side">
+        <h3>Gyors szálláskeresés</h3>
+        <p>Válaszd ki a célvárost, majd kattints a gombra – a <strong>Booking.com</strong> találatait nyitjuk meg új lapon.</p>
+
+        <div class="cta">
+          <select id="bookingCity">
+            <option value="">Válassz várost…</option>
+            <option>Budapest</option><option>Prága</option><option>Bécs</option>
+            <option>Krakkó</option><option>Párizs</option><option>Róma</option>
+            <option>Amszterdam</option><option>Barcelona</option><option>Koppenhága</option>
+          </select>
+          <button id="bookingBtn" class="btn wide">Keresés a Booking.com-on</button>
+        </div>
+
+        <hr>
+        <h4>Hasznos tippek</h4>
+        <ul class="tips">
+          
+          <li>Rugalmas dátumokkal jobb árakat találsz.</li>
+
+          <li>A központtól mért távolság sokat számít a városnézésnél.</li>
+
+          <li>Érdemes előre lementeni a foglalás visszaigazolását.</li>
+
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 TravelSnap</p>
+    </div>
+  </footer>
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="form.js"></script>
+</body>
+</html>

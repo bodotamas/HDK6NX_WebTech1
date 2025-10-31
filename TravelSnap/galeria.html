@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelSnap - Galéria</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <h1 class="brand">TravelSnap</h1>
+      <nav class="nav">
+        <a href="kezdolap.html">Kezdőlap</a>
+        <a href="varosok.html">Városok</a>
+        <a href="galeria.html" class="active">Galéria</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+        <a href="inspiracio.html">Inspiráció</a>
+        <a href="quiz.html">Kvíz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero-title">Európa <span class="gradient-text">legszebb városai</span></h2>
+        <p class="hero-sub">Fedezd fel a kontinens ikonikus látványosságait!</p>
+      </div>
+    </section>
+
+    <section class="gallery container">
+      <figure><img src="budapest1.jpg" alt="Budapest"><figcaption>Budapest</figcaption></figure>
+      <figure><img src="budapest2.jpg" alt="Budapest"><figcaption>Budapest</figcaption></figure>
+
+      <figure><img src="prague1.jpg" alt="Prága"><figcaption>Prága</figcaption></figure>
+      <figure><img src="prague2.jpg" alt="Prága"><figcaption>Prága</figcaption></figure>
+
+      <figure><img src="vienna1.jpg" alt="Bécs"><figcaption>Bécs</figcaption></figure>
+      <figure><img src="vienna2.jpg" alt="Bécs"><figcaption>Bécs</figcaption></figure>
+
+      <figure><img src="krakow1.jpg" alt="Krakkó"><figcaption>Krakkó</figcaption></figure>
+      <figure><img src="krakow2.jpg" alt="Krakkó"><figcaption>Krakkó</figcaption></figure>
+
+      <figure><img src="paris1.jpg" alt="Párizs"><figcaption>Párizs</figcaption></figure>
+      <figure><img src="paris2.jpg" alt="Párizs"><figcaption>Párizs</figcaption></figure>
+
+      <figure><img src="rome1.jpg" alt="Róma"><figcaption>Róma</figcaption></figure>
+      <figure><img src="rome2.jpg" alt="Róma"><figcaption>Róma</figcaption></figure>
+
+      <figure><img src="amsterdam1.jpg" alt="Amszterdam"><figcaption>Amszterdam</figcaption></figure>
+      <figure><img src="amsterdam2.jpg" alt="Amszterdam"><figcaption>Amszterdam</figcaption></figure>
+
+      <figure><img src="barcelona1.jpg" alt="Barcelona"><figcaption>Barcelona</figcaption></figure>
+      <figure><img src="barcelona2.jpg" alt="Barcelona"><figcaption>Barcelona</figcaption></figure>
+
+      <figure><img src="copenhagen1.jpg" alt="Koppenhága"><figcaption>Koppenhága</figcaption></figure>
+      <figure><img src="copenhagen2.jpg" alt="Koppenhága"><figcaption>Koppenhága</figcaption></figure>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="closeLb" class="close" aria-label="Bezárás">×</button>
+    <img id="lbImg" src="" alt="">
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 TravelSnap</p>
+    </div>
+  </footer>
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>

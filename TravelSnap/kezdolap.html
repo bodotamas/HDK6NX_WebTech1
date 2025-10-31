@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelSnap - Kezdőlap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <h1 class="brand">TravelSnap</h1>
+      <nav class="nav">
+        <a href="kezdolap.html" class="active">Kezdőlap</a>
+        <a href="varosok.html">Városok</a>
+        <a href="galeria.html">Galéria</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+        <a href="inspiracio.html">Inspiráció</a>
+        <a href="quiz.html">Kvíz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero-title">Üdvözlünk a <span class="gradient-text">TravelSnapen</span>!</h2>
+        <p class="hero-sub">
+          Fedezd fel Európa legszebb városait – <strong>inspirálódj</strong>, <strong>tervezz</strong> és
+          <strong>merülj el</strong> az utazás világában!
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card video-card">
+        <h3>Rövid bemutató videó Budapestről</h3>
+
+        <div class="video-wrap">
+          <video id="introVideo" controls playsinline>
+            <source src="intro.mp4" type="video/mp4">
+            A böngésződ nem támogatja a videó lejátszását.
+          </video>
+        </div>
+
+        <div class="video-controls">
+          <button id="playBtn" class="btn">Lejátszás</button>
+          <button id="pauseBtn" class="btn btn-ghost">Megállítás</button>
+          <button id="skipBtn" class="btn">+10 mp</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="card">
+        <h3>Mi az a <span class="accent">TravelSnap</span>?</h3>
+        <p class="lead">
+          A TravelSnap egy mini weboldal, ami néhány európai város legszebb helyeit és élményeit mutatja be.
+          Válogass a városok között, nézd meg a galériát vagy küldd el nekünk saját utazási tippjeidet!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 TravelSnap | Készítette: Bodó Tamás HDK6NX</p>
+    </div>
+  </footer>
+
+  <script src="jquery-3.6.0.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelSnap - Városok</title>
+  <link rel="stylesheet" href="cities.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <h1 class="brand">TravelSnap</h1>
+      <nav class="nav">
+        <a href="kezdolap.html">Kezdőlap</a>
+        <a href="varosok.html" class="active">Városok</a>
+        <a href="galeria.html">Galéria</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+        <a href="inspiracio.html">Inspiráció</a>
+        <a href="quiz.html">Kvíz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero-title">Fedezd fel a <span class="gradient-text">városokat</span>!</h2>
+        <p class="hero-sub">Szűrj névre vagy országra – a kártyák azonnal frissülnek.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="toolbar card">
+        <input type="text" id="searchInput" placeholder="Keresés városnév szerint… (pl. budapest)">
+        <select id="countryFilter">
+          <option value="">Összes ország</option>
+        </select>
+        <button id="resetBtn" class="btn">Szűrők törlése</button>
+      </div>
+
+      <section id="cards" class="cards" aria-live="polite"></section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 TravelSnap</p>
+    </div>
+  </footer>
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="ajax.js"></script>
+</body>
+</html>

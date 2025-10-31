@@ -1,0 +1,67 @@
+{
+  "cities": [
+    {
+      "name": "Budapest",
+      "country": "Magyarország",
+      "description": "A Duna gyöngye – hidak, termálfürdők és pesti pezsgés.",
+      "details": "Tipp: Halászbástya naplementében, Rudas fürdő, Károlyi-kert.",
+      "image": "budapest1.jpg"
+    },
+    {
+      "name": "Prága",
+      "country": "Csehország",
+      "description": "A tornyok városa, mesés óvárossal.",
+      "details": "Tipp: Károly híd kora reggel, Petrin-kilátó, Lennon-fal.",
+      "image": "prague1.jpg"
+    },
+    {
+      "name": "Bécs",
+      "country": "Ausztria",
+      "description": "Császárváros múzeumokkal és kávéházakkal.",
+      "details": "Tipp: Schönbrunn, Belvedere, Naschmarkt.",
+      "image": "vienna1.jpg"
+    },
+    {
+      "name": "Krakkó",
+      "country": "Lengyelország",
+      "description": "Élő egyetemi város gazdag történelemmel.",
+      "details": "Tipp: Főtér, Wawel, Kazimierz.",
+      "image": "krakow1.jpg"
+    },
+    {
+      "name": "Párizs",
+      "country": "Franciaország",
+      "description": "A fények városa, a romantika fővárosa.",
+      "details": "Tipp: Eiffel-torony éjjel, Montmartre, Szajna-parti séta.",
+      "image": "paris1.jpg"
+    },
+    {
+      "name": "Róma",
+      "country": "Olaszország",
+      "description": "Örök város, ahol minden utca történelmet mesél.",
+      "details": "Tipp: Colosseum, Trevi-kút, Trastevere esti hangulat.",
+      "image": "rome1.jpg"
+    },
+    {
+      "name": "Amszterdam",
+      "country": "Hollandia",
+      "description": "Csatornák, kerékpárok és művészet – Európa egyik legkülönlegesebb városa.",
+      "details": "Tipp: Van Gogh Múzeum, Jordaan negyed, Anne Frank-ház.",
+      "image": "amsterdam1.jpg"
+    },
+    {
+      "name": "Barcelona",
+      "country": "Spanyolország",
+      "description": "Gaudí városa, tengerparti életérzéssel és mediterrán lendülettel.",
+      "details": "Tipp: Sagrada Família, Park Güell, La Rambla esti sétája.",
+      "image": "barcelona1.jpg"
+    },
+    {
+      "name": "Koppenhága",
+      "country": "Dánia",
+      "description": "Skandináv stílus, modern dizájn és nyugalom.",
+      "details": "Tipp: Nyhavn, Tivoli, Kis Hableány szobor.",
+      "image": "copenhagen1.jpg"
+    }
+  ]
+}
