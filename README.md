@@ -1,10 +1,8 @@
 # 🌍 TravelSnap – WebTech I. Beadandó (2025)
 
-> **Készítette:** *[Itt add meg a neved]*  
+> **Készítette:** *Bodó Tamás*  
 > **Tantárgy:** Webtechnológiák I.  
-> **Félév:** 2025/1  
-> **Fejlesztői környezet:** XAMPP, Visual Studio Code  
-> **Jegy célszint:** ⭐⭐⭐⭐⭐ (kiváló / 5)
+> **Fejlesztői környezet:** XAMPP, Visual Studio Code 
 
 ---
 
