@@ -16,8 +16,6 @@ A projekt a **turizmus, utazás és városfelfedezés** témakörét dolgozza fe
 
 Minden oldal külön funkciót mutat be, a kezdőlaptól a galérián át egészen az interaktív kvízig.
 
-A jegyzőkönyv megtalálható a TravelSnap mappában, jegyzokonyv.pdf néven. 
-
 ---
 
 ## 🧭 Oldalak és funkciók
@@ -56,5 +54,9 @@ A projekt kizárólag **front-end technológiákra** épül, a XAMPP pedig a lok
 - **CSS Animációk** (hover, fade, scale)  
 - **LocalStorage API** – a kvíz eredmények mentésére  
 - **Lightbox és overlay effekt** – a galériában és az inspirációs oldalon  
+
+---
+
+A jegyzőkönyv megtalálható a TravelSnap mappában, jegyzokonyv.pdf néven. 
 
 ---
