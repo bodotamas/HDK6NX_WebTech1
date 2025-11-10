@@ -1,0 +1,283 @@
+:root 
+{
+  --bg-start: #f5f8ff;
+  --bg-end: #ffffff;
+  --brand: #0a4ea1;
+  --brand-dark: #083c7a;
+  --accent: #ffb703;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --ring: #dbeafe;
+  --shadow: 0 6px 22px rgba(2, 6, 23, 0.08);
+  --radius: 18px;
+}
+
+* 
+{
+  box-sizing: border-box;
+}
+
+body 
+{
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Roboto, Arial;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end)) fixed;
+}
+
+.container 
+{
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 0 20px;
+}
+
+.site-header 
+{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: linear-gradient(90deg, var(--brand), var(--brand-dark));
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.nav-wrap 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.brand 
+{
+  margin: 0;
+  font-size: 28px;
+}
+
+.nav 
+{
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav a 
+{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding: 6px 4px;
+}
+
+.nav a::after 
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: var(--accent);
+  transition: width 0.25s;
+}
+
+.nav a:hover::after,
+.nav a.active::after 
+{
+  width: 100%;
+}
+
+.hero 
+{
+  position: relative;
+  min-height: 72vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.backdrop 
+{
+  position: absolute;
+  inset: 0;
+  background: #ccc center/cover no-repeat;
+  transform: scale(1.06);
+  will-change: transform;
+  transition: transform 0.5s ease, filter 0.8s ease;
+  filter: saturate(1) contrast(1.03) brightness(0.93);
+}
+
+.hero-overlay 
+{
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      1200px 520px at 50% -120px,
+      rgba(10, 78, 161, 0.35),
+      transparent
+    ),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.35), rgba(2, 6, 23, 0.55));
+}
+
+.hero-inner 
+{
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.badge 
+{
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.title 
+{
+  font-size: clamp(30px, 4vw, 56px);
+  margin: 14px 0 8px;
+}
+
+.gradient-text 
+{
+  background: linear-gradient(90deg, #fff, var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#quoteBox 
+{
+  max-width: 820px;
+  margin: 10px auto 0;
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+#quoteBox span 
+{
+  opacity: 0.9;
+}
+
+.actions 
+{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn 
+{
+  background: #ffffff;
+  color: var(--brand-dark);
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+
+.btn:hover 
+{
+  filter: brightness(0.95);
+}
+
+.btn.ghost 
+{
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.auto 
+{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e6efff;
+  user-select: none;
+}
+
+.cards 
+{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin: 18px 0 48px;
+}
+
+@media (max-width: 960px) 
+{
+  .cards 
+  {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card 
+{
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--ring);
+  padding: 18px;
+}
+
+.card h3 
+{
+  margin: 2px 0 10px;
+}
+
+.tip p 
+{
+  margin: 8px 0 0;
+  color: #334155;
+}
+
+.chips 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips label 
+{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eef4ff;
+  border: 1px solid #dbeafe;
+  color: var(--brand);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.chips input 
+{
+  accent-color: var(--brand);
+}
+
+.site-footer 
+{
+  padding: 18px 0;
+  background: #0b3d77;
+  color: #e6efff;
+  text-align: center;
+}
