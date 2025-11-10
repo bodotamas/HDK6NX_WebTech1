@@ -43,8 +43,6 @@ A projekt kizárólag **front-end technológiákra** épül, a XAMPP pedig a lok
 
 ### ⚙️ **Fejlesztői környezet**
 - **XAMPP** – Apache webszerver és lokális környezet a projekt futtatásához.  
-  (a projekt a `htdocs/travel` mappában futtatható:  
-  `http://localhost/travel/kezdolap.html`)
 - **Visual Studio Code** – forráskód szerkesztés és fájlkezelés.
 - **Git & GitHub** – verziókezelés és nyilvános beadandó feltöltés.
 
